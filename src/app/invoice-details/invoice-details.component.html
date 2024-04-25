@@ -1,0 +1,21 @@
+<div class="invoice-fields">
+  <div class="form-group">
+      <label for="invoiceNumber">Invoice Number</label>
+      <input class="input1" type="text" id="invoiceNumber" />
+  </div>
+  <div class="form-group">
+      <label for="departmentID">Department ID</label>
+      <input class="input2" type="text" id="departmentID" />
+  </div>
+  <div class="form-group">
+      <label for="departmentName">Department Name</label>
+      <input class="input3" type="text" id="departmentName" />
+  </div>
+  <div class="form-group">
+    
+    <!-- <input class="input4" type="text" id="totalAmount" [(ngModel)]="totalAmount" readonly /> -->
+    <div>Total Amount: {{ totalAmount }}</div>
+  </div>
+</div>
+  <button mat-raised-button color="primary" (click)="generateInvoice()">Submit Invoice</button>
+
